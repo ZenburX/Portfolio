@@ -1,0 +1,615 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Rubenz Tampubolon | Portfolio</title>
+
+        <!-- External Scripts & Fonts -->
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+
+        <!-- Custom CSS Styles -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Load External Tailwind Config -->
+        <script src="tailwind.config.js"></script>
+    </head>
+    <body class="bg-background dark:bg-slate-900 text-on-surface dark:text-white font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed transition-colors duration-300">
+        <!-- Navigation Bar -->
+        <nav class="bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant dark:border-outline shadow-sm h-16 w-full">
+            <div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-full">
+                <div class="flex items-center gap-2">
+                    <img
+                        alt="Rubenz Tampubolon Logo"
+                        class="h-8 w-8 rounded-full object-cover"
+                        src="Foto/logo_rt.png"
+                    />
+                </div>
+
+                <div class="flex items-center gap-4 md:gap-8 font-body-md text-body-md">
+                    <div class="hidden md:flex items-center gap-8">
+                        <a class="text-on-surface-variant dark:text-gray-200 hover:text-primary transition-standard" href="#about">About</a>
+                        <a class="text-on-surface-variant dark:text-gray-200 hover:text-primary transition-standard" href="#projects">Projects</a>
+                        <a class="text-on-surface-variant dark:text-gray-200 hover:text-primary transition-standard" href="#experience">Experience</a>
+                        <a class="text-on-surface-variant dark:text-gray-200 hover:text-primary transition-standard" href="#training">Training &amp; Certification</a>
+                        <a class="text-on-surface-variant dark:text-gray-200 hover:text-primary transition-standard" href="#contact">Contact</a>
+                    </div>
+
+                    <!-- Tombol Toggle Dark / Light Mode -->
+                    <button
+                        id="theme-toggle"
+                        type="button"
+                        aria-label="Toggle dark mode"
+                        class="p-2 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-standard flex items-center justify-center focus:outline-none"
+                    >
+                        <span id="theme-toggle-dark-icon" class="material-symbols-outlined hidden">dark_mode</span>
+                        <span id="theme-toggle-light-icon" class="material-symbols-outlined hidden dark:text-gray-200">light_mode</span>
+                    </button>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="md:hidden text-on-surface-variant flex items-center" id="mobile-menu-toggle">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Panel -->
+            <div
+                class="hidden md:hidden flex-col gap-4 px-gutter pb-4 bg-surface/95 dark:bg-inverse-surface/95 border-t border-outline-variant dark:border-outline dark:text-gray-300"
+                id="mobile-menu"
+            >
+                <a class="text-on-surface-variant hover:text-primary transition-standard py-2" href="#about">About</a>
+                <a class="text-on-surface-variant hover:text-primary transition-standard py-2" href="#projects">Projects</a>
+                <a class="text-on-surface-variant hover:text-primary transition-standard py-2" href="#experience">Experience</a>
+                <a class="text-on-surface-variant hover:text-primary transition-standard py-2" href="#training">Training &amp; Certification</a>
+                <a class="text-on-surface-variant hover:text-primary transition-standard py-2" href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="reveal py-xl px-gutter max-w-container-max mx-auto overflow-hidden">
+                <div class="flex flex-col md:flex-row items-center gap-lg">
+                    <div class="flex-1 text-center md:text-left space-y-md">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md">
+                            <span class="relative flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                            </span>
+                            Hi Everyone 👋, I'm
+                        </div>
+                        <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface tracking-tight dark:text-gray-200">
+                            Rubenz Tampubolon
+                            <span class="block text-primary text-2xl md:text-3xl font-semibold mt-2 min-h-[1.5em]">
+                                As
+                                <span id="typewriter" class="typewriter">Web Developer</span>
+                            </span>
+                        </h1>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl dark:text-gray-300">Welcome To My Personal Website</p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-sm">
+                            <a class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label-md text-label-md shadow-sm transition-standard hover:opacity-90" href="#projects">Explore Projects</a>
+                        </div>
+                    </div>
+                    <div class="flex-1 flex justify-center items-center">
+                        <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-8 border-surface-container-high shadow-lg">
+                            <img class="w-full h-full object-cover" alt="Portrait of Rubenz Tampubolon" src="Foto/Foto Full Body.png" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Me Section -->
+            <section class="reveal py-xl bg-smooth-alt" id="about">
+                <div class="max-w-container-max mx-auto px-gutter">
+                    <div class="grid md:grid-cols-2 gap-lg items-center">
+                        <div class="space-y-sm">
+                            <h2 class="font-headline-lg text-headline-lg text-on-surface dark:text-gray-200">About Me</h2>
+                            <div class="w-12 h-1 bg-primary rounded-full"></div>
+                            <p class="font-body-lg text-body-lg text-on-surface-variant pt-sm dark:text-gray-200">
+                                As an Informatics graduate, I am currently focused on Web Development, with a passion for building modern, efficient, and user-friendly web applications. I enjoy
+                                turning ideas and requirements into practical digital solutions through clean code, thoughtful design, and reliable functionality.
+                            </p>
+                            <p class="font-body-lg text-body-lg text-on-surface-variant pt-sm dark:text-gray-200">
+                                My journey in web development has led me to work with technologies such as PHP, Laravel, Vue.js, CodeIgniter, REST APIs, and MySQL. I continuously develop my skills by
+                                building real-world projects and exploring modern web development practices.
+                            </p>
+                        </div>
+                        <div class="p-6 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/30 card-hover transition-standard">
+                            <!-- Header -->
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="p-3 bg-primary-container rounded-lg text-on-primary-container flex items-center justify-center">
+                                    <span class="material-symbols-outlined">code</span>
+                                </div>
+
+                                <div>
+                                    <h3 class="font-headline-md text-headline-md text-on-surface">Specialization & Tech Stack</h3>
+                                    <p class="text-on-surface-variant text-body-md">Focused on building modern, scalable, and user-friendly web applications.</p>
+                                </div>
+                            </div>
+
+                            <!-- Tech Stack -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <!-- Frontend -->
+                                <div class="p-4 bg-surface-container-low rounded-lg border border-outline-variant/20">
+                                    <h4 class="font-semibold text-on-surface mb-3">Frontend</h4>
+
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">HTML</span>
+
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">CSS</span>
+
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">JavaScript</span>
+
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">Vue.js</span>
+                                    </div>
+                                </div>
+
+                                <!-- Backend -->
+                                <div class="p-4 bg-surface-container-low rounded-lg border border-outline-variant/20">
+                                    <h4 class="font-semibold text-on-surface mb-3">Backend</h4>
+
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">PHP</span>
+
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">Laravel</span>
+
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">CodeIgniter</span>
+                                    </div>
+                                </div>
+
+                                <!-- Database -->
+                                <div class="p-4 bg-surface-container-low rounded-lg border border-outline-variant/20">
+                                    <h4 class="font-semibold text-on-surface mb-3">Database</h4>
+
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">MySQL</span>
+
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">MariaDB</span>
+                                    </div>
+                                </div>
+
+                                <!-- RESTful API -->
+                                <div class="p-4 bg-surface-container-low rounded-lg border border-outline-variant/20">
+                                    <h4 class="font-semibold text-on-surface mb-3">RESTful API</h4>
+
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">Postman</span>
+                                    </div>
+                                </div>
+
+                                <!-- Frameworks -->
+                                <div class="p-4 bg-surface-container-low rounded-lg border border-outline-variant/20 sm:col-span-2">
+                                    <h4 class="font-semibold text-on-surface mb-3">Frameworks & Tools</h4>
+
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">Laravel</span>
+
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">Vue.js</span>
+
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">CodeIgniter</span>
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">Tailwind CSS</span>
+
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">Git</span>
+
+                                        <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm text-on-surface-variant">GitHub</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="reveal py-xl px-gutter max-w-container-max mx-auto" id="projects">
+                <!-- Header Section (Judul & Navigasi Panah di Kanan) -->
+                <div class="flex flex-row justify-between items-center mb-lg">
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface dark:text-gray-200">Projects</h2>
+
+                    <!-- Tombol Panah Navigasi -->
+                    <div class="flex items-center gap-2">
+                        <button
+                            id="slideLeft"
+                            class="p-2 rounded-full bg-surface-container-high text-on-surface hover:bg-primary hover:text-on-primary active:scale-90 transition-all duration-200 flex items-center justify-center"
+                            aria-label="Previous projects"
+                        >
+                            <span class="material-symbols-outlined">arrow_back</span>
+                        </button>
+                        <button
+                            id="slideRight"
+                            class="p-2 rounded-full bg-surface-container-high text-on-surface hover:bg-primary hover:text-on-primary active:scale-90 transition-all duration-200 flex items-center justify-center"
+                            aria-label="Next projects"
+                        >
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Container Carousel -->
+                <div id="projects-grid" class="overflow-hidden py-2">
+                <div
+                    id="projects-inner"
+                    class="grid grid-flow-col auto-cols-[100%] md:auto-cols-[calc((100%-2*theme(spacing.md))/3)] gap-md projects-track"
+                >
+                    <!-- Project 1 -->
+                    <article
+                        class="project-card bg-surface rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 group transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg"
+                    >
+                        <div class="aspect-video overflow-hidden">
+                            <img
+                                class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105"
+                                alt="Financial dashboard interface for a stone crushing company"
+                                src="Foto/Picture1.png"
+                            />
+                        </div>
+                        <div class="p-md space-y-sm">
+                            <div class="flex justify-between items-start">
+                                <h3 class="font-headline-md text-headline-md text-on-surface">Operasional Bisnis</h3>
+                                <a
+                                    href="https://drive.google.com/file/d/1oy4Td9TLOdJA-LNrfhaUAYQzeRm5L1VJ/view?usp=sharing"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="material-symbols-outlined text-primary-container"
+                                >
+                                    arrow_outward
+                                </a>
+                            </div>
+                            <p class="text-on-surface-variant text-body-md">
+                                Sistem Informasi berbasis website yang mendukung proses produksi, penjualan, operasional, dan keuangan pada salah satu perusahaan penyedia material batu di Yogyakarta
+                                menggunakan CodeIgniter 3.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">PHP</span>
+                                <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">CodeIgniter</span>
+                                <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">Chart.js</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card bg-surface rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 group card-hover transition-standard" data-category="web">
+                        <div class="aspect-video overflow-hidden">
+                            <img
+                                class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105"
+                                alt="Desa Digital government platform interface"
+                                src="Foto/Picture2.png"
+                            />
+                        </div>
+                        <div class="p-md space-y-sm">
+                            <div class="flex justify-between items-start">
+                                <h3 class="font-headline-md text-headline-md text-on-surface">Desa Digital</h3>
+                                <a href="https://github.com/ZenburX/desa-digital-api.git" target="_blank" rel="noopener noreferrer" class="material-symbols-outlined text-primary-container">
+                                    arrow_outward
+                                </a>
+                            </div>
+                            <p class="text-on-surface-variant text-body-md">
+                                Platform digital berbasis website yang mendukung digitalisasi layanan dan pengelolaan data desa melalui integrasi backend API dan frontend interaktif menggunakan
+                                Laravel 12 dan Vue 3.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">Laravel 12</span>
+                                <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">Vue 3</span>
+                                <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">REST API</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card bg-surface rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 group card-hover transition-standard" data-category="it">
+                        <div class="aspect-video overflow-hidden">
+                            <img
+                                class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                                alt="IT command center with network monitoring dashboards"
+                                src="Foto/Picture3.png"
+                            />
+                        </div>
+                        <div class="p-md space-y-sm">
+                            <div class="flex justify-between items-start">
+                                <h3 class="font-headline-md text-headline-md text-on-surface">Personal Interaktif Web Page</h3>
+                                <a href="https://birthdaypublic.vercel.app/" target="_blank" rel="noopener noreferrer" class="material-symbols-outlined text-primary-container">arrow_outward</a>
+                            </div>
+                            <p class="text-on-surface-variant text-body-md">
+                                Website interaktif bertema ulang tahun yang menggabungkan animasi, galeri foto, musik, dan elemen interaktif untuk menciptakan pengalaman ucapan yang personal dan
+                                menarik.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">HTML</span>
+                                <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">CSS</span>
+                                <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">JS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card bg-surface rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 group card-hover transition-standard" data-category="it">
+                        <div class="aspect-video overflow-hidden">
+                            <img
+                                class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                                alt="IT command center with network monitoring dashboards"
+                                src="Foto/Picture4.png"
+                            />
+                        </div>
+                        <div class="p-md space-y-sm">
+                            <div class="flex justify-between items-start">
+                                <h3 class="font-headline-md text-headline-md text-on-surface">Portfolio</h3>
+                                <a href="#" class="material-symbols-outlined text-primary-container">arrow_outward</a>
+                            </div>
+                            <p class="text-on-surface-variant text-body-md">
+                                Website portofolio pribadi yang menampilkan profil, keahlian, tech stack, sertifikasi, dan proyek-proyek web development yang saya kerjakan.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">HTML</span>
+                                <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">CSS</span>
+                                <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">JS</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section class="reveal py-xl bg-smooth-alt" id="experience">
+                <div class="max-w-container-max mx-auto px-gutter">
+                    <div class="text-center mb-lg space-y-sm">
+                        <h2 class="font-headline-lg text-headline-lg text-on-surface dark:text-gray-200">Experience</h2>
+                        <p class="text-on-surface-variant text-body-lg dark:text-gray-300">My Internship Experience</p>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="w-full max-w-xs bg-surface rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 group card-hover transition-standard flex flex-col">
+                            <div class="aspect-[5/4] overflow-hidden bg-surface leading-none flex-shrink-0">
+                                <img
+                                    class="block w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                                    alt="IT command center with network monitoring dashboards"
+                                    src="Foto/Picture5.jpg"
+                                />
+                            </div>
+
+                            <div class="p-4 space-y-2">
+                                <div class="flex justify-between items-start"></div>
+
+                                <!-- Teks Deskripsi -->
+                                <p class="text-on-surface-variant text-body-md inline">
+                                    Saya berkontribusi dalam operasional IT di Bidang Teknologi Informasi dan Komunikasi pada Subbidang Teknologi Informasi Polda DIY melalui implementasi sistem CCTV
+                                    portabel yang terintegrasi dengan Command Center. Tugas saya meliputi
+                                    <span id="more-text" class="hidden">
+                                        konfigurasi jaringan dan perangkat CCTV, instalasi serta pengelolaan server berbasis Linux, pengaturan IP dan akses jarak jauh, pemantauan sistem, pembuatan
+                                        desain topologi jaringan menggunakan Cisco Packet Tracer, penyusunan dokumentasi teknis, serta membantu tim IT dalam proses troubleshooting jaringan dan
+                                        konektivitas.
+                                    </span>
+                                    <span id="dots">...</span>
+                                </p>
+
+                                <!-- Tombol Toggle (menggunakan ID tanpa inline onclick) -->
+                                <button id="toggle-btn" class="text-primary text-body-sm font-semibold hover:underline focus:outline-none ml-1 cursor-pointer">More</button>
+
+                                <div class="flex flex-wrap gap-2 pt-2">
+                                    <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">Linux</span>
+                                    <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">Networking</span>
+                                    <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">Cisco</span>
+                                    <span class="px-2 py-1 bg-surface-container-high rounded text-xs font-label-sm text-on-surface-variant">PuTTY</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Training & Certification -->
+            <section class="reveal py-xl px-gutter max-w-container-max mx-auto" id="training">
+                <h2 class="font-headline-lg text-headline-lg text-on-surface text-center mb-xl dark:text-gray-200">Training &amp; Certification</h2>
+                <div class="grid md:grid-cols-2 gap-md max-w-5xl mx-auto">
+                    <!-- Certification 1 -->
+                    <article class="project-card bg-surface rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 group card-hover transition-standard" data-category="it">
+                        <div class="aspect-video overflow-hidden">
+                            <img
+                                class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105"
+                                alt="IT command center with network monitoring dashboards"
+                                src="Foto/sertif1.jpg"
+                            />
+                        </div>
+                        <div class="p-md space-y-sm">
+                            <div class="flex justify-between items-start">
+                                <h3 class="font-headline-md text-body-lg text-on-surface">EnglishScore</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Certification 2 -->
+                    <article class="project-card bg-surface rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 group card-hover transition-standard" data-category="it">
+                        <div class="aspect-video overflow-hidden">
+                            <img
+                                class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105"
+                                alt="IT command center with network monitoring dashboards"
+                                src="Foto/sertif5.jpg"
+                            />
+                        </div>
+                        <div class="p-md space-y-sm">
+                            <div class="flex justify-between items-start">
+                                <h3 class="font-headline-md text-body-lg text-on-surface">Polda D.I.Yogyakarta</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Certification 3 -->
+                    <article class="project-card bg-surface rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 group card-hover transition-standard" data-category="it">
+                        <div class="aspect-video overflow-hidden">
+                            <img
+                                class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105"
+                                alt="IT command center with network monitoring dashboards"
+                                src="Foto/sertif2.jpg"
+                            />
+                        </div>
+                        <div class="p-md space-y-sm">
+                            <div class="flex justify-between items-start">
+                                <h3 class="font-headline-md text-body-lg text-on-surface">Full Stack Laravel 12 & Vue 3 Developer: Website Desa Digital</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Certification 4 -->
+                    <article class="project-card bg-surface rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 group card-hover transition-standard" data-category="it">
+                        <div class="aspect-video overflow-hidden">
+                            <img
+                                class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105"
+                                alt="IT command center with network monitoring dashboards"
+                                src="Foto/sertif4.jpg"
+                            />
+                        </div>
+                        <div class="p-md space-y-sm">
+                            <div class="flex justify-between items-start">
+                                <h3 class="font-headline-md text-body-lg text-on-surface">Learn Data Analysis For Beginners with Excel</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Certification 5 -->
+                    <article class="project-card bg-surface rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 group card-hover transition-standard" data-category="it">
+                        <div class="aspect-video overflow-hidden">
+                            <img
+                                class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105"
+                                alt="IT command center with network monitoring dashboards"
+                                src="Foto/sertif3.jpg"
+                            />
+                        </div>
+                        <div class="p-md space-y-sm">
+                            <div class="flex justify-between items-start">
+                                <h3 class="font-headline-md text-body-lg text-on-surface">IT Customer Support Basics</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Certification 6 -->
+                    <article class="project-card bg-surface rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 group card-hover transition-standard" data-category="it">
+                        <div class="aspect-video overflow-hidden">
+                            <img
+                                class="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105"
+                                alt="IT command center with network monitoring dashboards"
+                                src="Foto/sertif6.jpg"
+                            />
+                        </div>
+                        <div class="p-md space-y-sm">
+                            <div class="flex justify-between items-start">
+                                <h3 class="font-headline-md text-body-lg text-on-surface">Reserach Support for the Exact Field</h3>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="reveal py-xl px-gutter max-w-container-max mx-auto" id="contact">
+                <div class="grid md:grid-cols-2 gap-lg">
+                    <div class="space-y-md">
+                        <h2 class="font-headline-lg text-headline-lg text-on-surface dark:text-gray-200">Contact Me</h2>
+                        <div class="space-y-sm pt-md">
+                            <div class="flex items-center gap-4 text-on-surface-variant">
+                                <span class="material-symbols-outlined text-primary">mail</span>
+                                <span class="font-body-md dark:text-gray-300">rubenz.tampubolon.id@gmail.com</span>
+                            </div>
+                            <div class="flex items-center gap-4 text-on-surface-variant">
+                                <span class="material-symbols-outlined text-primary">location_on</span>
+                                <span class="font-body-md dark:text-gray-300">Malang, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 pt-sm">
+                            <a
+                                class="p-3 bg-white text-black dark:bg-white dark:text-black rounded-full hover:bg-primary hover:text-white transition-standard shadow-sm"
+                                href="https://linkedin.com/in/rubenz-tampubolon"
+                            >
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a
+                                class="p-3 bg-white text-black dark:bg-white dark:text-black rounded-full hover:bg-primary hover:text-white transition-standard shadow-sm"
+                                href="https://github.com/ZenburX"
+                            >
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.61-4.041-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a
+                                class="p-3 bg-white text-black dark:bg-white dark:text-black rounded-full hover:bg-primary hover:text-white transition-standard shadow-sm"
+                                href="https://www.instagram.com/rubenz___"
+                            >
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.848 0-3.204.012-3.584.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="space-y-sm bg-surface-container-high p-lg rounded-2xl" id="contact-form" action="https://formspree.io/f/mrpgzkrz" method="POST">
+                        <input type="hidden" name="_subject" value="New message from Portfolio" />
+                        <div class="grid grid-cols-2 gap-sm">
+                            <div class="space-y-xs">
+                                <label class="font-label-md text-label-md text-on-surface ml-1">Name</label>
+                                <input
+                                    class="w-full bg-surface border-outline-variant rounded-xl p-3 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-standard outline-none dark:text-black"
+                                    placeholder="John Doe"
+                                    type="text"
+                                    name="name"
+                                    required=""
+                                />
+                            </div>
+                            <div class="space-y-xs">
+                                <label class="font-label-md text-label-md text-on-surface ml-1">Email</label>
+                                <input
+                                    class="w-full bg-surface border-outline-variant rounded-xl p-3 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-standard outline-none dark:text-black"
+                                    placeholder="john@example.com"
+                                    type="email"
+                                    name="email"
+                                    required=""
+                                />
+                            </div>
+                        </div>
+                        <div class="space-y-xs">
+                            <label class="font-label-md text-label-md text-on-surface ml-1">Subject</label>
+                                <input
+                                    class="w-full bg-surface border-outline-variant rounded-xl p-3 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-standard outline-none dark:text-black"
+                                    placeholder="Project Inquiry"
+                                    type="text"
+                                    name="subject"
+                                />
+                        </div>
+                        <div class="space-y-xs">
+                            <label class="font-label-md text-label-md text-on-surface ml-1">Message</label>
+                                <textarea
+                                    class="w-full bg-surface border-outline-variant rounded-xl p-3 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-standard outline-none resize-none dark:text-black"
+                                    placeholder="How can I help you?"
+                                    rows="4"
+                                    name="message"
+                                    required=""
+                                ></textarea>
+                        </div>
+                        <button class="w-full bg-primary text-on-primary py-4 rounded-xl font-label-md text-label-md shadow-md hover:opacity-90 transition-standard mt-md" type="submit">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-surface dark:bg-inverse-surface border-t border-outline-variant dark:border-outline py-lg px-gutter">
+            <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-sm">
+                <div class="text-center md:text-left md:flex-1">
+                    <p class="text-on-surface-variant font-label-md text-label-md dark:text-gray-200">Technology Enthusiast</p>
+                </div>
+
+                <div class="flex justify-center gap-8 font-label-md text-label-md md:flex-1">
+                    <a class="text-on-surface-variant dark:text-gray-200 hover:text-primary transition-standard" href="https://linkedin.com/in/rubenz-tampubolon">LinkedIn</a>
+                    <a class="text-on-surface-variant dark:text-gray-200 hover:text-primary transition-standard" href="https://github.com/ZenburX">GitHub</a>
+                    <a class="text-on-surface-variant dark:text-gray-200 hover:text-primary transition-standard" href="https://www.instagram.com/rubenz___">Instagram</a>
+                </div>
+
+                <div class="text-center md:text-right md:flex-1 text-on-surface-variant font-label-md text-label-md dark:text-gray-200">© 2026 Rubenz Tampubolon. All rights reserved.</div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
