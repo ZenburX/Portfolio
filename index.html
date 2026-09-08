@@ -41,7 +41,10 @@
         <div id="scroll-progress" class="fixed top-0 left-0 h-0.5 z-[60] bg-primary dark:bg-primary-fixed shadow-[0_0_10px_rgba(0,74,198,0.6)]" style="width: 0%"></div>
 
         <!-- Navigation Bar -->
-        <nav id="main-nav" class="bg-surface/80 dark:bg-neutral-900/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant dark:border-white/10 dark:shadow-none shadow-sm h-16 w-full transition-all duration-300">
+        <nav
+            id="main-nav"
+            class="bg-surface/80 dark:bg-neutral-900/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant dark:border-white/10 dark:shadow-none shadow-sm h-16 w-full transition-all duration-300"
+        >
             <div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-full nav-inner">
                 <div class="flex items-center gap-2">
                     <img alt="Rubenz Tampubolon Logo" class="h-8 w-8 rounded-full object-cover" src="Foto/logo_rt.png" />
@@ -95,54 +98,64 @@
                 <div class="hero-blob hero-blob-3"></div>
 
                 <div class="max-w-container-max mx-auto px-gutter relative z-10">
-                <div class="flex flex-col md:flex-row items-center gap-lg">
-                    <div class="flex-1 text-center md:text-left space-y-md">
-                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-mono text-xs tracking-wider uppercase">
-                            <span class="relative flex h-2 w-2">
-                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                            </span>
-                            Hi Everyone, I'm
-                        </div>
-                        <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl tracking-tight">
-                            <span class="gradient-text">Rubenz Tampubolon</span>
-                            <span class="block text-primary text-2xl md:text-3xl font-semibold mt-2 min-h-[1.5em]">
-                                As
-                                <span id="typewriter" class="typewriter">Web Developer</span>
-                            </span>
-                        </h1>
-                        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl dark:text-gray-300">Welcome To My Personal Website</p>
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-sm">
-                            <a class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label-md text-label-md shadow-lg shadow-primary/25 transition-standard hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5" href="#projects">Explore Projects</a>
-                            <a class="border-2 border-primary text-primary px-8 py-3 rounded-xl font-label-md text-label-md transition-standard hover:bg-primary hover:text-on-primary hover:-translate-y-0.5" href="#contact">Contact Me</a>
-                        </div>
-                        <!-- Stats Row -->
-                        <div class="flex gap-8 justify-center md:justify-start pt-md">
-                            <div class="text-center md:text-left">
-                                <div class="text-2xl md:text-3xl font-bold text-on-surface" data-count="10">0+</div>
-                                <div class="font-mono text-xs text-on-surface-variant uppercase tracking-wider">Projects</div>
+                    <div class="flex flex-col md:flex-row items-center gap-lg">
+                        <div class="flex-1 text-center md:text-left space-y-md">
+                            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-mono text-xs tracking-wider uppercase">
+                                <span class="relative flex h-2 w-2">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                                </span>
+                                Hi Everyone, I'm
                             </div>
-                            <div class="w-px bg-outline-variant"></div>
-                            <div class="text-center md:text-left">
-                                <div class="text-2xl md:text-3xl font-bold text-on-surface" data-count="6">0+</div>
-                                <div class="font-mono text-xs text-on-surface-variant uppercase tracking-wider">Certificates</div>
+                            <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl tracking-tight">
+                                <span class="gradient-text">Rubenz Tampubolon</span>
+                                <span class="block text-primary text-2xl md:text-3xl font-semibold mt-2 min-h-[1.5em]">
+                                    As
+                                    <span id="typewriter" class="typewriter">Web Developer</span>
+                                </span>
+                            </h1>
+                            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl dark:text-gray-300">Welcome To My Personal Website</p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-sm">
+                                <a
+                                    class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label-md text-label-md shadow-lg shadow-primary/25 transition-standard hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5"
+                                    href="#projects"
+                                >
+                                    Explore Projects
+                                </a>
+                                <a
+                                    class="border-2 border-primary text-primary px-8 py-3 rounded-xl font-label-md text-label-md transition-standard hover:bg-primary hover:text-on-primary hover:-translate-y-0.5"
+                                    href="#contact"
+                                >
+                                    Contact Me
+                                </a>
                             </div>
-                            <div class="w-px bg-outline-variant"></div>
-                            <div class="text-center md:text-left">
-                                <div class="text-2xl md:text-3xl font-bold text-on-surface" data-count="3">0+</div>
-                                <div class="font-mono text-xs text-on-surface-variant uppercase tracking-wider">Years Exp</div>
+                            <!-- Stats Row -->
+                            <div class="flex gap-8 justify-center md:justify-start pt-md">
+                                <div class="text-center md:text-left">
+                                    <div class="text-2xl md:text-3xl font-bold text-on-surface" data-count="3">0+</div>
+                                    <div class="font-mono text-xs text-on-surface-variant uppercase tracking-wider">Projects</div>
+                                </div>
+                                <div class="w-px bg-outline-variant"></div>
+                                <div class="text-center md:text-left">
+                                    <div class="text-2xl md:text-3xl font-bold text-on-surface" data-count="4">0+</div>
+                                    <div class="font-mono text-xs text-on-surface-variant uppercase tracking-wider">Certificates</div>
+                                </div>
+                                <div class="w-px bg-outline-variant"></div>
+                                <div class="text-center md:text-left">
+                                    <div class="text-2xl md:text-3xl font-bold text-on-surface" data-count="1">0+</div>
+                                    <div class="font-mono text-xs text-on-surface-variant uppercase tracking-wider">Years Exp</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex justify-center items-center">
+                            <div class="hero-portrait-wrapper">
+                                <div class="hero-portrait-glow"></div>
+                                <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl z-10">
+                                    <img class="w-full h-full object-cover" alt="Portrait of Rubenz Tampubolon" src="Foto/Foto Full Body.png" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="flex-1 flex justify-center items-center">
-                        <div class="hero-portrait-wrapper">
-                            <div class="hero-portrait-glow"></div>
-                            <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl z-10">
-                                <img class="w-full h-full object-cover" alt="Portrait of Rubenz Tampubolon" src="Foto/Foto Full Body.png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 </div>
             </section>
 
@@ -150,93 +163,93 @@
             <section class="py-10 overflow-hidden relative">
                 <div class="marquee-viewport relative">
                     <div class="marquee-track">
-                    <div class="marquee-content">
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">HTML</span>
+                        <div class="marquee-content">
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">HTML</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/css/1572B6" alt="CSS" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">CSS</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">JavaScript</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/vuedotjs/4FC08D" alt="Vue.js" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Vue.js</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">PHP</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Laravel</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/codeigniter/EE4323" alt="CodeIgniter" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">CodeIgniter</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">MySQL</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Tailwind</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/git/F05032" alt="Git" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Git</span>
+                            </div>
                         </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/css/1572B6" alt="CSS" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">CSS</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">JavaScript</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/vuedotjs/4FC08D" alt="Vue.js" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Vue.js</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">PHP</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Laravel</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/codeigniter/EE4323" alt="CodeIgniter" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">CodeIgniter</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">MySQL</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Tailwind</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/git/F05032" alt="Git" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Git</span>
-                        </div>
-                    </div>
 
-                    <!-- Duplicate for seamless loop -->
-                    <div class="marquee-content" aria-hidden="true">
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">HTML</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/css/1572B6" alt="CSS" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">CSS</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">JavaScript</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/vuedotjs/4FC08D" alt="Vue.js" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Vue.js</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">PHP</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Laravel</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/codeigniter/EE4323" alt="CodeIgniter" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">CodeIgniter</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">MySQL</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Tailwind</span>
-                        </div>
-                        <div class="flex flex-col items-center gap-1.5 shrink-0">
-                            <img class="w-9 h-9" src="https://cdn.simpleicons.org/git/F05032" alt="Git" loading="lazy" />
-                            <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Git</span>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="marquee-content" aria-hidden="true">
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">HTML</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/css/1572B6" alt="CSS" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">CSS</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">JavaScript</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/vuedotjs/4FC08D" alt="Vue.js" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Vue.js</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">PHP</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Laravel</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/codeigniter/EE4323" alt="CodeIgniter" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">CodeIgniter</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">MySQL</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Tailwind</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1.5 shrink-0">
+                                <img class="w-9 h-9" src="https://cdn.simpleicons.org/git/F05032" alt="Git" loading="lazy" />
+                                <span class="text-xs font-medium text-on-surface-variant dark:text-gray-400">Git</span>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </section>
 
@@ -818,7 +831,10 @@
                         <span class="gradient-text">Let&rsquo;s Work Together</span>
                     </h3>
                     <p class="text-on-surface-variant text-body-lg dark:text-gray-300 mb-6">Have a project in mind? Let&rsquo;s build something great.</p>
-                    <a href="#contact" class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label-md text-label-md shadow-lg shadow-primary/25 transition-standard hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5 inline-block">
+                    <a
+                        href="#contact"
+                        class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label-md text-label-md shadow-lg shadow-primary/25 transition-standard hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5 inline-block"
+                    >
                         Get In Touch
                     </a>
                 </div>
@@ -833,7 +849,11 @@
                         <a class="text-on-surface-variant dark:text-gray-200 hover:text-primary transition-standard" href="https://www.instagram.com/rubenz___">Instagram</a>
                     </div>
 
-                    <div class="text-center md:text-right md:flex-1 text-on-surface-variant font-label-md text-label-md dark:text-gray-200">&copy; <span id="footer-year">2026</span> Rubenz Tampubolon. All rights reserved.</div>
+                    <div class="text-center md:text-right md:flex-1 text-on-surface-variant font-label-md text-label-md dark:text-gray-200">
+                        &copy;
+                        <span id="footer-year">2026</span>
+                        Rubenz Tampubolon. All rights reserved.
+                    </div>
                 </div>
             </div>
         </footer>
