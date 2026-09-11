@@ -305,6 +305,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Unified smooth scroll with custom easing (back-to-top style)
+    const smoothScrollTo = y => {
+        const duration = 800;
+        const start = window.scrollY;
+        const startTime = performance.now();
+        const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+
+        const step = currentTime => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            window.scrollTo(0, start + (y - start) * easeOutCubic(progress));
+            if (progress < 1) requestAnimationFrame(step);
+        };
+
+        requestAnimationFrame(step);
+    };
+
+    // Smooth scroll for all in-page section anchors (nav, hero, footer)
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        const hash = link.getAttribute('href');
+        if (!hash || hash === '#') return;
+        const target = document.getElementById(hash.substring(1));
+        if (!target) return;
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            smoothScrollTo(target.offsetTop);
+        });
+    });
+
     // Scroll progress + back to top
     const progressBar = document.getElementById('scroll-progress');
     const backToTop = document.getElementById('back-to-top');
@@ -340,21 +369,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateScrollUI();
 
     if (backToTop) {
-        backToTop.addEventListener('click', () => {
-            const duration = 800;
-            const start = window.scrollY;
-            const startTime = performance.now();
-            const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
-
-            const step = currentTime => {
-                const elapsed = currentTime - startTime;
-                const progress = Math.min(elapsed / duration, 1);
-                window.scrollTo(0, start - start * easeOutCubic(progress));
-                if (progress < 1) requestAnimationFrame(step);
-            };
-
-            requestAnimationFrame(step);
-        });
+        backToTop.addEventListener('click', () => smoothScrollTo(0));
     }
 
     // Certificate lightbox
