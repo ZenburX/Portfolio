@@ -36,7 +36,9 @@
         <!-- Load External Tailwind Config -->
         <script src="tailwind.config.js"></script>
     </head>
-    <body class="bg-background dark:bg-neutral-950 text-on-surface dark:text-white font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed transition-colors duration-300">
+    <body class="bg-background dark:bg-neutral-950 text-on-surface dark:text-white font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed transition-colors duration-300 relative">
+        <!-- Full-page background image -->
+        <div class="fixed inset-0 z-[-10] bg-cover bg-center bg-no-repeat opacity-30" style="background-image: url('Foto/forest.jpg')"></div>
         <!-- Scroll Progress Bar -->
         <div id="scroll-progress" class="fixed top-0 left-0 h-0.5 z-[60] bg-primary dark:bg-primary-fixed shadow-[0_0_10px_rgba(0,74,198,0.6)]" style="width: 0%"></div>
 
@@ -101,10 +103,6 @@
                     <div class="flex flex-col md:flex-row items-center gap-lg">
                         <div class="flex-1 text-center md:text-left space-y-md">
                             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-mono text-xs tracking-wider uppercase">
-                                <span class="relative flex h-2 w-2">
-                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                                </span>
                                 Hi Everyone, I'm
                             </div>
                             <h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl tracking-tight">
@@ -149,10 +147,7 @@
                         </div>
                         <div class="flex-1 flex justify-center items-center">
                             <div class="hero-portrait-wrapper">
-                                <div class="hero-portrait-glow"></div>
-                                <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl z-10">
-                                    <img class="w-full h-full object-cover" alt="Portrait of Rubenz Tampubolon" src="Foto/Foto Full Body.png" />
-                                </div>
+                                <img class="w-full h-full object-cover" alt="Portrait of Rubenz Tampubolon" src="Foto/pas foto bg putih.png" />
                             </div>
                         </div>
                     </div>

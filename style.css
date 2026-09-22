@@ -254,7 +254,6 @@
     height: 420px;
     top: -120px;
     left: -120px;
-    background: radial-gradient(circle, #004ac6 0%, transparent 70%);
     animation: blob-float 12s ease-in-out infinite;
 }
 .hero-blob-2 {
@@ -262,7 +261,6 @@
     height: 420px;
     bottom: -140px;
     right: -120px;
-    background: radial-gradient(circle, #712ae2 0%, transparent 70%);
     animation: blob-float 16s ease-in-out infinite reverse;
 }
 .hero-blob-3 {
@@ -270,7 +268,6 @@
     height: 260px;
     top: 35%;
     right: 12%;
-    background: radial-gradient(circle, #0d46d1 0%, transparent 70%);
     animation: blob-float 14s ease-in-out infinite 2s;
 }
 @keyframes blob-float {
@@ -285,18 +282,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.hero-portrait-glow {
-    position: absolute;
-    inset: -20%;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(0, 74, 198, 0.35) 0%, rgba(113, 42, 226, 0.2) 45%, transparent 70%);
-    filter: blur(30px);
-    animation: portrait-pulse 4s ease-in-out infinite;
-}
-@keyframes portrait-pulse {
-    0%, 100% { transform: scale(1); opacity: 0.8; }
-    50%      { transform: scale(1.08); opacity: 1; }
 }
 
 /* Card gradient border hover */
@@ -335,9 +320,6 @@
 /* Nav shrink on scroll */
 .nav-scrolled {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    height: 56px;
-}
-.nav-scrolled .nav-inner {
     height: 56px;
 }
 
@@ -408,8 +390,7 @@ nav .nav-link::after {
 
 /* Reduced motion support - only decorative blobs */
 @media (prefers-reduced-motion: reduce) {
-    .hero-blob,
-    .hero-portrait-glow {
+    .hero-blob {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
     }
